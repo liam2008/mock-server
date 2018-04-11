@@ -11,7 +11,6 @@ const files = fs.readdirSync(mockDir)
 files.forEach(function(file) {
   _.extend(base, require(path.resolve(mockDir, file)))
 })
-console.log('base', base)
 
 // 原路返回路由
 var whiteRouter = ['/sys/menus/routers']
@@ -19,8 +18,6 @@ var whiteRouter = ['/sys/menus/routers']
 // 路由中间件
 var outVal = {}
 app.use(function(req, res, next) {
-  console.log('req.baseUrl', req.originalUrl)
-  console.log('req.path', req.path)
   var addr
   if (isContain(req.path)) {
     addr = req.originalUrl

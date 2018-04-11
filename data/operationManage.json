@@ -1,0 +1,388 @@
+{
+  "_pageName_1": "msku",
+  "/operation/merchandise/msku/list": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "totalNum": 3,
+      "mskuList": [
+        {
+          "teamName": "进击的小组",
+          "delivery": "FBA",
+          "msku": "FU08AQMS02",
+          "mskuName": "Christmas Laser Star",
+          "manager": "钟晓燕",
+          "ASIN": "B074VQKT9Z",
+          "shopName": "AMAZON-HHKM-US",
+          "shelfTime": "2018-04-11",
+          "updateTime": "2018-04-11",
+          "mskuStatus": {
+            "name": "已停用",
+            "id": 2
+          },
+          "picture": "http://49.4.10.118:8790/images/resource/images/a24dea4b-461d-4d30-8c8b-002b9f80326d.png",
+          "storeSkuId": "YYE-AA00000001",
+          "epitaph": "12345",
+          "FnSKU": "X001JIQ4WL",
+          "storeName": "简写验证",
+          "id": "FU08AQMS02_\\t_1",
+          "salesStatus": {
+            "name": "备用",
+            "id": 6
+          }
+        },
+        {
+          "teamName": "进击的小组",
+          "delivery": "FBA",
+          "msku": "FU08AQMS02",
+          "mskuName": "Christmas Laser Star",
+          "manager": "钟晓燕",
+          "ASIN": "B074VQKT9Z",
+          "shopName": "test2",
+          "shelfTime": "2018-04-11",
+          "updateTime": "2018-04-11",
+          "mskuStatus": {
+            "name": "已停用",
+            "id": 2
+          },
+          "picture": null,
+          "storeSkuId": "ANATESTT00007",
+          "epitaph": "testtesttesttest阿斯蒂芬撒地方sad",
+          "FnSKU": "X001JIQ4WL",
+          "storeName": null,
+          "id": "FU08AQMS02_\\t_2",
+          "salesStatus": {
+            "name": "停售",
+            "id": 4
+          }
+        },
+        {
+          "teamName": "进击的小组",
+          "delivery": "FBA",
+          "msku": "按时发生",
+          "mskuName": "阿斯蒂芬三的",
+          "manager": "钟晓燕",
+          "ASIN": "B074VQKT9Z",
+          "shopName": "AMAZON-HHKM-US",
+          "shelfTime": "2018-04-11",
+          "updateTime": "2018-04-11",
+          "mskuStatus": {
+            "name": "正常",
+            "id": 1
+          },
+          "picture": null,
+          "storeSkuId": "YYR-ABC0000002",
+          "epitaph": null,
+          "FnSKU": "X001JIQ4WL",
+          "storeName": "简写验证3",
+          "id": "按时发生_\\t_1",
+          "salesStatus": {
+            "name": "在售期",
+            "id": 2
+          }
+        }
+      ],
+      "shops": {
+        "select": [
+          {
+            "id": 1,
+            "shopName": "AMAZON-HHKM-US"
+          },
+          {
+            "id": 2,
+            "shopName": "test2"
+          },
+          {
+            "id": 4,
+            "shopName": "test4"
+          }
+        ]
+      },
+      "salesStatus": [
+        {
+          "name": "未开售",
+          "id": 0
+        },
+        {
+          "name": "推广期",
+          "id": 1
+        },
+        {
+          "name": "在售期",
+          "id": 2
+        },
+        {
+          "name": "清仓期",
+          "id": 3
+        },
+        {
+          "name": "停售",
+          "id": 4
+        },
+        {
+          "name": "归档",
+          "id": 5
+        },
+        {
+          "name": "备用",
+          "id": 6
+        }
+      ],
+      "teamStatus": [
+        {
+          "name": "test",
+          "id": 1
+        }
+      ],
+      "dispatchStatus": [
+        {
+          "name": "FBA",
+          "id": 1
+        },
+        {
+          "name": "FBM",
+          "id": 2
+        }
+      ],
+      "mskuStatus": [
+        {
+          "name": "正常",
+          "id": 1
+        },
+        {
+          "name": "已停用",
+          "id": 2
+        }
+      ]
+    }
+  },
+  "/operation/employee/selector": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "manager": [
+        {
+          "name": "test",
+          "id": 1
+        }
+      ]
+    }
+  },
+  "/system/archives/shop/select": {
+    "code": 200,
+    "data": {
+      "select": [
+        {
+          "id": 1,
+          "shopName": "AMAZON-HHKM-US"
+        }
+      ]
+    },
+    "msg": "成功"
+  },
+  "/operation/merchandise/msku/all-down": {
+    "code": 200,
+    "data": [],
+    "msg": "成功"
+  },
+  "/operation/merchandise/msku/check-msku": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "mskuChecked": {
+        "delivery": "FBA",
+        "FnSKU": "B06Y3CX12B",
+        "asin": "B06Y3CX12B"
+      }
+    }
+  },
+  "/operation/merchandise/msku/edit": {
+    "code": 200,
+    "data": [],
+    "msg": "成功"
+  },
+  "/operation/merchandise/msku/epitaph/save": {
+    "code": 200,
+    "data": [],
+    "msg": "成功"
+  },
+  "/operation/merchandise/msku/charge/edit": {
+    "code": 200,
+    "data": {},
+    "msg": "string"
+  },
+  "/operation/merchandise/msku/save": {
+    "code": 200,
+    "data": {},
+    "msg": "string"
+  },
+  "/operation/merchandise/msku/switch": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "changeMsku": {
+        "id": "04-2T7L-APXV",
+        "mskuStatus": 0
+      }
+    }
+  },
+  "/operation/merchandise/msku/msku": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "parentAsin": null,
+      "delivery": "FBA",
+      "mskuName": "Christmas Laser Star",
+      "fnsku": "X001JIQ4WL",
+      "storeSku": "ANATESTT00007",
+      "asin": "B074VQKT9Z",
+      "shopId": "2",
+      "mskuId": "FU08AQMS02",
+      "employee": "test",
+      "salesStatusCd": 4,
+      "group": "test"
+    }
+  },
+  "/operation/merchandise/sales/plan/plans": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "salesPlan": [
+        {
+          "expiryDate": "2018-03-25",
+          "guidePrice": 36,
+          "planId": "1",
+          "salesStatus": 1,
+          "expectedDailySales": 80,
+          "startDate": "2018-03-23"
+        },
+        {
+          "expiryDate": null,
+          "guidePrice": 36,
+          "planId": "2",
+          "salesStatus": 2,
+          "expectedDailySales": 80,
+          "startDate": "2018-03-26"
+        },
+        {
+          "expiryDate": null,
+          "guidePrice": 36,
+          "planId": "3",
+          "salesStatus": 3,
+          "expectedDailySales": 80,
+          "startDate": "2018-03-26"
+        }
+      ]
+    }
+  },
+  "_pageName_2": "salePlan",
+  "/operation/merchandise/sales/plan/list": {
+    "code": 200,
+    "msg": "",
+    "data": {
+      "totalNum": 1,
+      "salesStatus": [
+        {
+          "name": "未开售",
+          "id": 0
+        },
+        {
+          "name": "推广期",
+          "id": 1
+        },
+        {
+          "name": "在售期",
+          "id": 2
+        },
+        {
+          "name": "清仓期",
+          "id": 3
+        },
+        {
+          "name": "停售",
+          "id": 4
+        },
+        {
+          "name": "归档",
+          "id": 5
+        },
+        {
+          "name": "备用",
+          "id": 6
+        }
+      ],
+      "planList": [
+        {
+          "msku": "FU08AQMS02",
+          "manager": "test",
+          "plans": [
+            {
+              "expiryDate": "2018-03-25",
+              "exptDailySales": 80,
+              "guidePrice": 36,
+              "planId": "1",
+              "salesStatus": {
+                "name": "推广期",
+                "id": 1
+              },
+              "startDate": "2018-03-23"
+            },
+            {
+              "expiryDate": null,
+              "exptDailySales": 80,
+              "guidePrice": 36,
+              "planId": "2",
+              "salesStatus": {
+                "name": "在售期",
+                "id": 2
+              },
+              "startDate": "2018-03-26"
+            },
+            {
+              "expiryDate": null,
+              "exptDailySales": 80,
+              "guidePrice": 36,
+              "planId": "3",
+              "salesStatus": {
+                "name": "清仓期",
+                "id": 3
+              },
+              "startDate": "2018-03-26"
+            }
+          ],
+          "shopName": "test2",
+          "ASIN": "B074VQKT9Z",
+          "shelfTime": "2018-04-11",
+          "id": "FU08AQMS02_\\t_2",
+          "team": "2"
+        }
+      ],
+      "teamStatus": [
+        {
+          "name": "test",
+          "id": 1
+        }
+      ]
+    }
+  },
+  "/operation/merchandise/sales/plan/save":{
+    "code":200,
+    "data":{},
+    "msg":"成功"
+  },
+  "/operation/merchandise/sales/plan/edit":{
+    "code":200,
+    "data":{},
+    "msg":"成功"
+  },
+  "/operation/merchandise/sales/plan/delete/FU08AQMS02_\t_2":{
+    "code":200,
+    "data":{},
+    "msg":"成功"
+  },
+  "/operation/merchandise/sales/plan/delete":{
+    "code":200,
+    "data":{},
+    "msg":"成功"
+  }
+}

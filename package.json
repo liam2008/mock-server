@@ -1,0 +1,11 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "scripts": {
+    "mock": "node server.js"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

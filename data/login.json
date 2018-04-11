@@ -1,0 +1,9 @@
+{
+  "/login": {
+    "code": 200,
+    "data": {
+      "token": "token"
+    },
+    "msg": "ok"
+  }
+}

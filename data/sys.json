@@ -1,0 +1,613 @@
+{
+  "/sys/menus/main": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "menuId": "10000000",
+        "menuName": "SystemManager",
+        "path": "/",
+        "methodCd": 1,
+        "component": "Layout",
+        "redirect": "noredirect",
+        "alwaysShow": true,
+        "metaTitle": "系统管理",
+        "metaIcon": "permission",
+        "hidden": false,
+        "metaNoCache": false,
+        "parentId": "-1",
+        "statusCd": "1",
+        "menuType": 1
+      },
+      {
+        "menuId": "20000000",
+        "menuName": "ProductManage",
+        "path": "/",
+        "methodCd": 1,
+        "component": "Layout",
+        "redirect": "noredirect",
+        "alwaysShow": true,
+        "metaTitle": "产品管理",
+        "metaIcon": "component",
+        "hidden": false,
+        "metaNoCache": false,
+        "parentId": "-1",
+        "statusCd": "1",
+        "menuType": 1
+      },
+      {
+        "menuId": "50000000",
+        "menuName": "OperationManager",
+        "path": "/",
+        "methodCd": 1,
+        "component": "Layout",
+        "redirect": "noredirect",
+        "alwaysShow": true,
+        "metaTitle": "运营管理",
+        "metaIcon": "component",
+        "hidden": false,
+        "metaNoCache": false,
+        "parentId": "-1",
+        "statusCd": "1",
+        "menuType": 1
+      },
+      {
+        "menuId": "60000000",
+        "menuName": "MerchandiseManager",
+        "path": "/",
+        "methodCd": 1,
+        "component": "Layout",
+        "redirect": "noredirect",
+        "alwaysShow": true,
+        "metaTitle": "供应商管理",
+        "metaIcon": "supplier",
+        "hidden": false,
+        "metaNoCache": true,
+        "parentId": "-1",
+        "statusCd": "1",
+        "menuType": 1
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=10000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "/sys",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "SystemSettings",
+        "meta": {
+          "title": "系统设置",
+          "icon": "setting",
+          "noCache": false
+        },
+        "children": [
+          {
+            "path": "menus",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "MenusManager",
+            "meta": {
+              "title": "菜单管理",
+              "icon": "menu",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "password/modify",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "ModifyPassword",
+            "meta": {
+              "title": "修改密码",
+              "icon": "psw",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      },
+      {
+        "path": "/",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "LoggerManager",
+        "meta": {
+          "title": "日志管理",
+          "icon": "component",
+          "noCache": false
+        },
+        "children": [
+          {
+            "path": "/",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "MessageCenter",
+            "meta": {
+              "title": "消息中心",
+              "icon": "msg",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "/",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "LoggerCenter",
+            "meta": {
+              "title": "日志中心",
+              "icon": "log",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      },
+      {
+        "path": "/",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "AuthorizationSetting",
+        "meta": {
+          "title": "权限设置",
+          "icon": "permission",
+          "noCache": false
+        },
+        "children": [
+          {
+            "path": "/",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "AccountManager",
+            "meta": {
+              "title": "账号管理",
+              "icon": "account",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "/",
+            "component": "Layout",
+            "redirect": "noredirect",
+            "name": "RoleManager",
+            "meta": {
+              "title": "角色管理",
+              "icon": "role",
+              "noCache": false
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=20000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "/productManage/product",
+        "component": "_import('productManage/product/product')",
+        "redirect": "noredirect",
+        "name": "Product",
+        "meta": {
+          "title": "产品管理",
+          "icon": "product",
+          "noCache": false
+        },
+        "children": [],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 2
+      },
+      {
+        "path": "/productManage/category",
+        "component": "_import('productManage/category/category')",
+        "redirect": "noredirect",
+        "name": "Category",
+        "meta": {
+          "title": "分类管理",
+          "icon": "category",
+          "noCache": true
+        },
+        "children": [],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 2
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=30000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "department",
+        "component": "_import('productManage/department/department')",
+        "redirect": "noredirect",
+        "name": "Department",
+        "meta": {
+          "title": "部门管理",
+          "icon": "tipsdepartmentup",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "departmentAdd",
+            "component": "_import('productManage/department/departmentAdd')",
+            "redirect": "noredirect",
+            "name": "DepartmentAdd",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "departmentEidt",
+            "component": "_import('productManage/department/departmentEdit')",
+            "redirect": "noredirect",
+            "name": "DepartmentEidt",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      },
+      {
+        "path": "personnel",
+        "component": "_import('productManage/personnel/personnel')",
+        "redirect": "noredirect",
+        "name": "Personnel",
+        "meta": {
+          "title": "fjkdljasfkldsaf",
+          "icon": "user",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "personnelAdd",
+            "component": "_import('productManage/personnel/personnelAdd')",
+            "redirect": "noredirect",
+            "name": "PersonnelAdd",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "personnelEidt",
+            "component": "_import('productManage/personnel/personnelEdit')",
+            "redirect": "noredirect",
+            "name": "PersonnelEidt",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      },
+      {
+        "path": "post",
+        "component": "_import('productManage/post/post')",
+        "redirect": "noredirect",
+        "name": "Post",
+        "meta": {
+          "title": "fjkdljasfkldsaf",
+          "icon": "post",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "postAdd",
+            "component": "_import('productManage/post/postAdd')",
+            "redirect": "noredirect",
+            "name": "PostAdd",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "postEidt",
+            "component": "_import('productManage/post/postEdit')",
+            "redirect": "noredirect",
+            "name": "PostEidt",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=40000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "/systemManage/systemSetting",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "SystemSetting",
+        "meta": {
+          "title": "fjkdljasfkldsaf",
+          "icon": "setting",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "psw",
+            "component": "_import('systemManage/systemSetting/psw')",
+            "redirect": "noredirect",
+            "name": "Psw",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "psw",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "menuManage",
+            "component": "_import('systemManage/systemSetting/menu/menuManage')",
+            "redirect": "noredirect",
+            "name": "MenuManage",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "menu",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "menuAdd",
+            "component": "_import('systemManage/systemSetting/menu/menuAdd')",
+            "redirect": "noredirect",
+            "name": "MenuAdd",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "menuEdit",
+            "component": "_import('systemManage/systemSetting/menu/menuEdit')",
+            "redirect": "noredirect",
+            "name": "MenuEdit",
+            "meta": {
+              "title": "fjkdljasfkldsaf",
+              "icon": "",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=50000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "/operationManage/replenishment",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "Replenishment",
+        "meta": {
+          "title": "补货管理",
+          "icon": "replenish",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "fba",
+            "component": "_import('operationManage/replenishment/fba')",
+            "redirect": "noredirect",
+            "name": "Fba",
+            "meta": {
+              "title": "FBA补货管理",
+              "icon": "fba",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      },
+      {
+        "path": "/operationManage/amazement",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "Amazement",
+        "meta": {
+          "title": "商品管理",
+          "icon": "goods",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "msku",
+            "component": "_import('operationManage/amazement/msku')",
+            "redirect": "noredirect",
+            "name": "Msku",
+            "meta": {
+              "title": "MSKU管理",
+              "icon": "msku",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "salePlan",
+            "component": "_import('operationManage/amazement/salePlan')",
+            "redirect": "noredirect",
+            "name": "SalePlan",
+            "meta": {
+              "title": "销售计划",
+              "icon": "plan",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      }
+    ]
+  },
+  "/sys/menus/routers?menuId=60000000": {
+    "code": 200,
+    "msg": "成功",
+    "data": [
+      {
+        "path": "/purchaseManage",
+        "component": "Layout",
+        "redirect": "noredirect",
+        "name": "PurchanseManager",
+        "meta": {
+          "title": "采购管理",
+          "icon": "tipsdepartmentup",
+          "noCache": true
+        },
+        "children": [
+          {
+            "path": "supplierManage",
+            "component": "_import('purchaseManage/supplierManage/supplier')",
+            "redirect": "noredirect",
+            "name": "SupplierManager",
+            "meta": {
+              "title": "供应商管理",
+              "icon": "tipsdepartmentup",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          },
+          {
+            "path": "supplierAccountManage",
+            "component": "_import('purchaseManage/supplierAccountManage/supplierAccount')",
+            "redirect": "noredirect",
+            "name": "SupplierAccountManage",
+            "meta": {
+              "title": "供应商账号管理",
+              "icon": "post",
+              "noCache": true
+            },
+            "children": null,
+            "alwaysShow": true,
+            "hidden": false,
+            "menuType": 2
+          }
+        ],
+        "alwaysShow": true,
+        "hidden": false,
+        "menuType": 3
+      }
+    ]
+  }
+}

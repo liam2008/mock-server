@@ -1,0 +1,42 @@
+{
+  "/system/nav": {
+    "code": 200,
+    "data": {
+      "navList":[
+        {
+          "id":"Dashboard",
+          "name":"首页"
+        },
+        {
+          "id":"PersonManage",
+          "name":"人事管理"
+        },
+        {
+          "id":"ProductManage",
+          "name":"产品管理"
+        },
+        {
+          "id":"PurchaseManage",
+          "name":"采购管理"
+        },
+        {
+          "id":"StoreManage",
+          "name":"仓库管理"
+        },
+        {
+          "id":"LogisticsManage",
+          "name":"物流管理"
+        },
+        {
+          "id":"FinancialManage",
+          "name":"财务管理"
+        },
+        {
+          "id":"SystemManage",
+          "name":"系统管理"
+        }
+      ]
+    },
+    "msg": "ok"
+  }
+}
